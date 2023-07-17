@@ -1,0 +1,6 @@
+{
+  "input_template": "### Instruction:\nCorrect the following FOL rule so that it matches the meaning of the NL statement.\n\n### NL:\n{nl}\n\n### FOL:\n{fol}\n\n",
+  "aux_input_template": "###\nContinue your correction from the previous corrections\n\n### Previous Corrections:\n{prev_correct}\n\n",
+  "output_template": "### Comments:\n{comments}\n\n### FOL:\n{fol}",
+  "output_splits": ["### Comments:", "### FOL:"]
+}

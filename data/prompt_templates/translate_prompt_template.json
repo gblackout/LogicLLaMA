@@ -1,0 +1,5 @@
+{
+  "input_template": "### Instruction:\nTranslate the following natural language (NL) statement to a first-order logic (FOL) rule\n\n### NL:\n{nl}\n\n",
+  "output_template": "### Comments:\nN/A\n\n### FOL:\n{fol}",
+  "output_splits": ["### Comments:", "### FOL:"]
+}

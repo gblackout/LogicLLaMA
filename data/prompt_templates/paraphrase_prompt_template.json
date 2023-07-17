@@ -1,0 +1,5 @@
+{
+  "input_template": "### NL:\n{nl}\n\n### FOL:\n{fol}\n\n",
+  "output_template": "",
+  "output_splits": ["### Comments:", "### Paraphrased/Simplified NL:"]
+}

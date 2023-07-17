@@ -1,0 +1,18 @@
+python sft.py \
+    --base_model "path/to/base/model" \
+    --data_path "path/to/dataset" \
+    --output_dir "logs/naive_correct_llama_sft" \
+    --prompt_template_path "data/prompt_templates" \
+    --translation_task=False \
+    --batch_size 128 \
+    --micro_batch_size 4 \
+    --num_epochs 10 \
+    --learning_rate 3e-4 \
+    --cutoff_len 256 \
+    --lora_r 16 \
+    --lora_alpha 16 \
+    --lora_dropout 0.05 \
+    --lora_target_modules '[q_proj,k_proj,v_proj,o_proj]' \
+    --use_wandb \
+    --wandb_project naive_correct_llama_sft \
+    --wandb_run_name default_run
