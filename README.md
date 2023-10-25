@@ -14,7 +14,7 @@ a dataset consists of 34K pairs of real-world natural language (NL) statements a
 [[Paper](https://arxiv.org/abs/2305.15541)] [[Data](https://huggingface.co/datasets/yuan-yang/MALLS-v0)] [[Model](https://huggingface.co/yuan-yang)]
 
 ## Release
-
+- [x] [10/25/2023] We release the MALLS-v0.1 dataset and the LoRA delta weights for LLaMA2-7B/13B
 - [x] [7/16/2023] We release the MALLS dataset (large language **M**odel gener**A**ted natural-**L**anguage-to-first-order-**L**ogic pair**S**) 
 which consists of 34K pairs of real-world natural language (NL) statements and the corresponding first-order logic (FOL) rules annotations.
 - [x] [7/16/2023] We released the LoRA delta weights for direct translation and naive correction LogicLLaMA
@@ -27,10 +27,18 @@ which consists of 34K pairs of real-world natural language (NL) statements and t
 ## Dataset and weights
 
 Datasets:
-- [MALLS-v0](https://huggingface.co/datasets/yuan-yang/MALLS-v0/blob/main/MALLS-v0.json): The file containing the 34K pairs of the MALLS dataset.
-- [FOLIO-parsed](https://huggingface.co/datasets/yuan-yang/MALLS-v0/blob/main/folio_parsed.json): the file containing 2K pairs collected and processed from the [FOLIO](https://github.com/Yale-LILY/FOLIO) datset.
+- [MALLS-v0.1](https://huggingface.co/datasets/yuan-yang/MALLS-v0/blob/main/MALLS-v0.1-train.json): The file contains the 27K auto-verified pairs of the MALLS dataset.
+- [MALLS-v0.1-test](https://huggingface.co/datasets/yuan-yang/MALLS-v0/blob/main/MALLS-v0.1-test.json): The file contains the 1K human-verified pairs of the MALLS dataset.
+- [MALLS-v0](https://huggingface.co/datasets/yuan-yang/MALLS-v0/blob/main/MALLS-v0.json): The file contains the 34K pairs of the MALLS dataset.
+- [FOLIO-parsed](https://huggingface.co/datasets/yuan-yang/MALLS-v0/blob/main/folio_parsed.json): the file contains 2K pairs collected and processed from the [FOLIO](https://github.com/Yale-LILY/FOLIO) datset.
 
-LoRA delta weights:
+LoRA delta weights V0.1 for LLaMA2-7B/13B:
+- [direct translation LogicLLaMA-7B](https://huggingface.co/yuan-yang/LogicLLaMA-7b-direct-translate-delta-v0.1)
+- [naive correction LogicLLaMA-7B](https://huggingface.co/yuan-yang/LogicLLaMA-7b-naive-correction-delta-v0.1)
+- [direct translation LogicLLaMA-13B](https://huggingface.co/yuan-yang/LogicLLaMA-13b-direct-translate-delta-v0.1)
+- [naive correction LogicLLaMA-13B](https://huggingface.co/yuan-yang/LogicLLaMA-13b-naive-correction-delta-v0.1)
+
+LoRA delta weights V0 for LLaMA-7B:
 - [direct translation](https://huggingface.co/yuan-yang/LogicLLaMA-7b-direct-translate-delta-v0)
 - [naive correction](https://huggingface.co/yuan-yang/LogicLLaMA-7b-naive-correction-delta-v0)
 
